@@ -1,0 +1,14 @@
+.main_titulos {
+    font-family: $fuentetitulo;
+}
+
+
+.disabled {
+    display: none;
+    visibility: hidden;
+}
+
+.active {
+    display: block;
+    visibility: visible;
+}

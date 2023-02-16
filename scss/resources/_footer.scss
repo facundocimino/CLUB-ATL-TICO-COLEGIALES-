@@ -1,0 +1,104 @@
+footer {
+    background-color: #183059;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+
+    /* width: 100vh; */
+    div {
+        .footer_lista {
+            margin-top: 15px;
+            padding: 15px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            list-style: none;
+            transition: 3s all;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: $fuente;
+                    padding: 15px;
+                    transition: all 300ms;
+                }
+
+                &:hover {
+                    transform: scaleX(1.2);
+
+                }
+            }
+
+        }
+    }
+
+    .footer_contacto {
+        justify-content: flex-start;
+        align-items: center;
+        transition: 3s all;
+
+        ul {
+            list-style: none;
+
+        }
+
+        h3 {
+            display: flex;
+            color: white;
+            font-size: 20px;
+            font-family: $fuentetitulo;
+            justify-content: flex-start;
+            padding: 10px;
+            margin-left: 8px;
+        }
+
+        .footer_redes {
+            li {
+                list-style: none;
+                color: white;
+                margin: 10px;
+                font-size: 1rem;
+                
+                a {
+                    color: white;
+                    font-family: $fuente;
+                    text-decoration: none;
+                    &:hover {
+                        color: #f1f02b;
+                    }
+                }
+                
+            }
+
+        }
+
+    }
+    .footer_maps {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.footer_autor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 32);
+    text-decoration: none;
+    font-family: $fuente;
+    background-color: midnightblue;
+    ul {
+        list-style: none;
+        color: white;
+        li{
+            a{
+                color: white;
+            }
+        }
+    
+    }
+}

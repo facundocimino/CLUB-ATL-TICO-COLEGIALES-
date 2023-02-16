@@ -1,0 +1,17 @@
+.socio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .socio_formulario {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .socio_imagen{
+        img {
+            margin: 2rem;
+            width: 40vw;
+        }
+    }
+}
