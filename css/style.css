@@ -553,32 +553,18 @@ footer {
     .imagenes_amistoso img {
       width: 250px; }
   .articulos {
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    margin: 2rem;
-    align-items: center;
-    width: 100%;
-    /* justify-content: center; */
-    grid-template-areas: "articulo1" "articulo2" "articulo3" "articulo4"; }
-  .articulo1 {
-    grid-area: articulo1;
-    width: 80vw;
-    justify-items: center; }
-  .articulo2 {
-    grid-area: articulo2;
-    width: 80vw; }
-  .articulo3 {
-    grid-area: articulo3;
-    width: 80vw; }
-  .articulo4 {
-    grid-area: articulo4;
-    width: 80vw; }
-  .articulo1_imagen {
-    width: auto; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .articulos .articulo1 {
+      width: 80vw; }
+    .articulos .articulo2 {
+      width: 80vw; }
+    .articulos .articulo3 {
+      width: 80vw; }
+    .articulos .articulo4 {
+      width: 80vw; }
   .socio {
     background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../Imagenes/socio.png);
     background-size: cover; }
@@ -600,11 +586,11 @@ footer {
     width: 150px;
     height: 120px; }
   .disabled {
-    display: none;
-    visibility: hidden; }
-  .active {
     display: block;
-    visibility: visible; } }
+    visibility: visible; }
+  .active {
+    display: none;
+    visibility: hidden; } }
 
 /* pruebas */
 .boton_tienda {
