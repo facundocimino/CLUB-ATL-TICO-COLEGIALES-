@@ -1,0 +1,38 @@
+.section_carousel{
+        width: 100vw;
+        // height: 30vh;
+        display: flex;
+        justify-content: center;
+}
+
+.imagenes {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .imagenes_entrenamiento{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+            width: 20%;
+        }
+    }
+    .imagenes_amistoso {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        img{
+            width: 20%;
+        }
+    }
+    }
+

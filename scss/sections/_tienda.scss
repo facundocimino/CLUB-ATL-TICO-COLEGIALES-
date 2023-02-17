@@ -1,0 +1,96 @@
+@mixin caja_articulos() {
+    width: 40vw;
+    border: 1px black solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.articulos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
+
+    .articulo1 {
+        @include caja_articulos();
+
+        a {
+            margin: 1rem;
+            font-family: $fuente;
+            font-weight: bolder;
+            color: white;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            display: flex;
+        }
+    }
+
+    .articulo2 {
+        @include caja_articulos();
+h3{
+    font-family: $fuentetitulo;
+    font-weight: lighter;
+}
+
+h5{
+    font-family: $fuente;
+    text-decoration: underline;
+    }
+
+    ol{
+        font-family: $fuente;
+        list-style: circle;
+        margin-left: 10px;
+    }
+        a {
+            margin: 1rem;
+            font-family: $fuente;
+            padding: 1rem;
+            font-weight: bolder;
+            color: white;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            display: flex;
+        }
+    }
+
+    .articulo3 {
+        @include caja_articulos();
+
+        a {
+            margin: 1rem;
+            font-family: $fuente;
+            font-weight: bolder;
+            color: white;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            display: flex;
+        }
+    }
+
+    .articulo4 {
+        @include caja_articulos();
+
+        a {
+            margin: 1rem;
+            font-family: $fuente;
+            font-weight: bolder;
+            color: white;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            display: flex;
+        }
+    }
+}

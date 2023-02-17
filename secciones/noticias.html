@@ -6,40 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOTICIAS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <a href="../index.html">
+        <a href="./index.html">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Colegiales_arg_logo.png" alt=""
                 class="header_logo">
         </a>
-        <nav>
-            <ul class="header_lista">
+        <nav class="active">
+            <ul class="header_lista wow animate__animated animate__pulse">
                 <li>
-                    <a href="../index.html">INICIO</a>
+                    <a href="./index.html" class="header_lista_act">INICIO</a>
                 </li>
                 <li>
-                    <a href="./historia.html">HISTORIA</a>
+                    <a href="./secciones/galeria.html">GALERIA</a>
                 </li>
                 <li>
-                    <a href="./noticias.html" class="header_lista_act">NOTICIAS</a>
+                    <a href="./secciones/noticias.html">NOTICIAS</a>
                 </li>
                 <li>
-                    <a href="./tiendacole.html">TIENDA COLE</a>
+                    <a href="./secciones/tiendacole.html">TIENDA COLE</a>
                 </li>
                 <li>
-                    <a href="./socio.html">HACETE SOCIO</a>
+                    <a href="./secciones/socio.html">HACETE SOCIO</a>
                 </li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <h1 class="main_titulos">NOTICIAS</h1>
-        <article class="noticia1">
-            <div class="noticia1_cuerpo">
+        <nav class="navbar navbar-expand-lg disabled">
+            <div class="container-fluid ">
+                <!-- <a href="./index.html">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Colegiales_arg_logo.png" alt=""
+                        class="header_logo">
+                </a> -->
+                <h3 class="main_titulo ">CLUB ATLETICO COLEGIALES</h3>
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/noticias.html">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/tiendacole.html">TIENDA COLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./secciones/socio.html">HACETE SOCIO</a>
+                        </li>
+                    </ul>
+                    <ul class="header_lista">
+                        <li>
+                            <i class="bi bi-envelope-fill">
+                                <a href="" target="_blank"></a>
+                            </i>
 
+                        </li>
+                        <li>
+                            <a href="tel:+5491168619757">
+                                <!-- <i class="bi bi-whatsapp"></i> -->
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/colegialesoficial" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/cacolegiales">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="https://twitter.com/facundo_cimino" target="_blank">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>NOTICIAS</h1>
+        <section class="noticias">
+            <div class="noticia1">
                 <img src="../Imagenes/Captura de pantalla 2023-01-12 183212.png" alt="Foto amistoso"
                     class="noticia1_foto">
 
@@ -50,8 +114,6 @@
                     goles de Caballero, Mansilla, y Lezcano. El segundo partido fue victoria 4-0 con goles de Oro,
                     Quevedo, Morinigo, y Veraldi.</p>
             </div>
-        </article>
-
             <div class="noticia2">
                 <img src="../Imagenes/Captura de pantalla 2023-01-12 222030.png" alt="imagen cancha"
                     class="noticia2_foto">
@@ -61,18 +123,25 @@
                     tribuna que extenderá la platea y comenzó la etapa de terminaciones.
                 </p>
             </div>
-
+            <div class="noticia3">
+                <img src="../Imagenes/proxpartido1.png" alt="Foto amistoso">
+                <h3>Amistoso contra libres</h3>
+                <p>El tricolor de Munro buscará cambiar la cara del equipo enfrentandose
+                    al siempre dificil Acassuso, en condicion de local. El encuentro sera el domingo 19/2 a las 17.00.
+                </p>
+            </div>
+        </section>
     </main>
 
 
     <footer>
         <div>
             <ul class="footer_lista">
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./secciones/historia.html">HISTORIA</a></li>
-                <li><a href="./secciones/noticias.html">NOTICIAS</a></li>
-                <li><a href="./secciones/tiendacole.html">TIENDA COLE</a></li>
-                <li><a href="./secciones/socio.html">HACETE SOCIO</a></li>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./galeria.html">GALERIA</a></li>
+                <li><a href="./noticias.html">NOTICIAS</a></li>
+                <li><a href="./tiendacole.html">TIENDA COLE</a></li>
+                <li><a href="./socio.html">HACETE SOCIO</a></li>
             </ul>
 
         </div>
