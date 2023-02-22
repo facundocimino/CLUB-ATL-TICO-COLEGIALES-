@@ -526,14 +526,27 @@ footer {
     justify-items: center; }
     .main_noticias .main_noticia1 {
       width: 95%; }
+      .main_noticias .main_noticia1 .noticias_foto {
+        width: 250px;
+        height: 250px; }
     .main_noticias .main_noticia2 {
       width: 95%; }
+      .main_noticias .main_noticia2 .noticias_foto {
+        width: 250px;
+        height: 250px; }
     .main_noticias .noticias_agenda {
-      grid-area: noticias_agenda;
       overflow: hidden;
       font-size: 12px;
       width: 100%;
-      /* justify-content: center; */ }
+      display: flex;
+      align-items: center; }
+      .main_noticias .noticias_agenda .tabla {
+        align-items: center; }
+        .main_noticias .noticias_agenda .tabla .columna2 li {
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 0px;
+          padding-right: 0px; }
   .noticias {
     display: flex;
     flex-direction: column;
@@ -545,13 +558,23 @@ footer {
       width: 100%; }
     .noticias .noticia3 {
       width: 100%; }
-  .imagenes_amistoso {
+  .imagenes {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .imagenes_amistoso img {
-      width: 250px; }
+    flex-direction: column; }
+    .imagenes .imagenes_amistoso {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .imagenes .imagenes_amistoso img {
+        width: 250px; }
+    .imagenes .imagenes_entrenamiento {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .imagenes .imagenes_entrenamiento img {
+        width: 250px; }
   .articulos {
     display: flex;
     flex-direction: column;
@@ -566,12 +589,25 @@ footer {
     .articulos .articulo4 {
       width: 80vw; }
   .socio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../Imagenes/socio.png);
     background-size: cover; }
-  .socio h1 {
-    color: white; }
-  .socio_formulario {
-    gap: 1rem; }
+    .socio h1 {
+      color: white; }
+    .socio .socio_formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; }
+      .socio .socio_formulario h4 {
+        color: white; }
+      .socio .socio_formulario label {
+        color: white; }
+    .socio .socio_imagen img {
+      margin: 2rem;
+      width: 40vw; }
   footer {
     display: flex;
     align-items: center; }

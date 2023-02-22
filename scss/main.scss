@@ -167,18 +167,6 @@
 
 }
 
-// .noticias_agenda {
-//     grid-area: noticias_agenda;
-//     overflow: hidden;
-//     width: 80vh;
-// }
-
-// .disabled {
-//     display: none;
-//     visibility: hidden;
-// }
-
-
 @media(max-width:420px) {
     header {
         display: flex;
@@ -222,19 +210,22 @@
     .container-fluid {
         color: white;
         background-color: transparent;
+
         h3 {
             font-size: 28px;
             align-items: flex-start;
         }
+
         #navbarNav {
             /* display: flex; */
             color: white;
             flex-direction: column;
             width: 100%;
             text-align: center;
-            ul{
-                li{
-                    a{
+
+            ul {
+                li {
+                    a {
                         color: white;
                     }
                 }
@@ -268,81 +259,149 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
-.main_noticia1{
-    width: 95%;
-}
-.main_noticia2{
-    width: 95%;
-}
-.noticias_agenda {
-    grid-area: noticias_agenda;
-    overflow: hidden;
-    font-size: 12px;
-    width: 100%;
 
-    /* justify-content: center; */
-}
+        .main_noticia1 {
+            width: 95%;
+            .noticias_foto{
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .main_noticia2 {
+            width: 95%;
+            .noticias_foto{
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .noticias_agenda {
+            overflow: hidden;
+            font-size: 12px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .tabla {
+                align-items: center;
+                .columna2{
+                    li{
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
 
     }
 
-.noticias{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 2rem;
-    .noticia1{
-        width: 100%;
-    }
-    .noticia2{
-        width: 100%;
-    }
-    .noticia3{
-        width: 100%;
-    }
-}
-    .imagenes_amistoso {
+    .noticias {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        width: 80%;
+        gap: 2rem;
+
+        .noticia1 {
+            width: 100%;
+        }
+
+        .noticia2 {
+            width: 100%;
+        }
+
+        .noticia3 {
+            width: 100%;
+        }
+    }
+
+    .imagenes {
+        display: flex;
+        flex-direction: column;
+
+        .imagenes_amistoso {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 250px;
+            }
+        }
+
+        .imagenes_entrenamiento {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 250px;
+            }
+        }
+
+
+    }
+
+    .articulos {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        img {
-            width: 250px;
+        align-items: center;
+
+        .articulo1 {
+            width: 80vw;
+        }
+
+        .articulo2 {
+            width: 80vw
+        }
+
+        .articulo3 {
+            width: 80vw;
+        }
+
+        .articulo4 {
+            width: 80vw;
+        }
     }
 
-}
-.articulos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .articulo1 {
-        width: 80vw;
-    }
-
-    .articulo2 {
-        width: 80vw
-    }
-
-    .articulo3 {
-        width: 80vw;
-    }
-
-    .articulo4 {
-        width: 80vw;
-    }
-}
     .socio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
             url(../Imagenes/socio.png);
         background-size: cover;
-    }
 
-    .socio h1 {
-        color: white;
-    }
+        h1 {
+            color: white;
+        }
 
-    .socio_formulario {
-        gap: 1rem;
+        .socio_formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            h4 {
+                color: white;
+            }
+
+            label {
+                color: white;
+            }
+        }
+
+        .socio_imagen {
+            img {
+                margin: 2rem;
+                width: 40vw;
+            }
+        }
     }
 
     footer {
@@ -366,9 +425,9 @@
     .disabled {
         display: block;
         visibility: visible;
-        
+
     }
-    
+
     .active {
         display: none;
         visibility: hidden;
