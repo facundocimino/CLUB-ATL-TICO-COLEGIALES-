@@ -2,6 +2,7 @@ footer {
     background-color: #183059;
     height: 30vh;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 
     /* width: 100vh; */
@@ -42,6 +43,19 @@ footer {
         ul {
             list-style: none;
 
+            li {
+                img {
+                    width: 20px;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                }
+            }
         }
 
         h3 {
@@ -60,21 +74,23 @@ footer {
                 color: white;
                 margin: 10px;
                 font-size: 1rem;
-                
+
                 a {
                     color: white;
                     font-family: $fuente;
                     text-decoration: none;
+
                     &:hover {
                         color: #f1f02b;
                     }
                 }
-                
+
             }
 
         }
 
     }
+
     .footer_maps {
         display: flex;
         justify-content: center;
@@ -91,14 +107,19 @@ footer {
     text-decoration: none;
     font-family: $fuente;
     background-color: midnightblue;
+
     ul {
         list-style: none;
         color: white;
-        li{
-            a{
+
+        li {
+            text-decoration:none;
+            color: white;
+            font-family: $fuente;
+            a {
                 color: white;
             }
         }
-    
+
     }
 }

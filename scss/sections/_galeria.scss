@@ -20,7 +20,7 @@
         flex-wrap: wrap;
         justify-content: center;
         img{
-            width: 20%;
+            width: 20vw;
         }
     }
     .imagenes_amistoso {
@@ -31,8 +31,15 @@
         flex-wrap: wrap;
         justify-content: center;
         img{
-            width: 20%;
+            width: 20vw;
         }
+    }
+    h3{
+        font-family: $fuente;
+        display: block;
+        justify-content: center;
+        font-weight: bolder;
+        font-style: italic;
     }
     }
 

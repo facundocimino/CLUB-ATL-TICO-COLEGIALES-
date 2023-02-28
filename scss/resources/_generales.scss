@@ -4,6 +4,8 @@
 
 h1{
     font-family: $fuentetitulo;
+    display: flex;
+    justify-content: center;
 }
 
 .disabled {

@@ -46,3 +46,23 @@ header {
     }
 
 }
+
+.header_logos {
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    font-family: $fuentetitulo;
+    // font-weight: lighter;
+    // font-size: 35px;
+    // transition: 5s all;
+
+    li {
+        img {
+            width: 20px;
+        }
+    }
+}
