@@ -2,6 +2,8 @@
     width: 25vw;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    // align-items: center;
     
     // gap: 10px;
     // padding: 1rem;
@@ -21,6 +23,9 @@
     .noticia1{
         background-color: rgb(255, 173, 173);
         @include caja_noticias();
+        h3{
+            margin: 15px;
+        }
     
     }
     .noticia2{
@@ -29,10 +34,18 @@
 
         @include caja_noticias();
         background-color: #A9DEF9;
+        h3{
+            margin-left: 70px;
+            margin-top: 15px
+        }
     }
     .noticia3{
         @include caja_noticias();
         background-color: #FCF6BD;
+        h3{
+            margin-left: 50px;
+            margin-top: 15px
+        }
     }
 }
 
