@@ -1,25 +1,4 @@
 
-.boton {
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    left: 0;
-
-    button {
-        img {
-            width: 50px;
-        }
-    }
-    .card{
-        position: absolute;
-        left: 0;
-        top: 60px;
-        display: flex;
-        align-items: center;
-        border: 5px white solid;
-    }
-}
-
 .main_portada {
     display: flex;
     align-items: center;

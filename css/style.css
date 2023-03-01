@@ -26,9 +26,23 @@ h1 {
   display: block;
   visibility: visible; }
 
+.boton {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  left: 0; }
+  .boton button img {
+    width: 50px; }
+  .boton .card {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    border: 5px white solid; }
+
 header {
   background-color: blue;
-  /* width: 100vh; */
   height: 20vh;
   display: flex;
   justify-content: space-between;
@@ -43,7 +57,6 @@ header {
     gap: 30px;
     justify-content: flex-end;
     align-items: center;
-    /* flex-wrap: wrap; */
     font-family: "Bebas Neue", cursive;
     font-weight: lighter;
     font-size: 35px;
@@ -65,25 +78,9 @@ header {
   gap: 30px;
   justify-content: center;
   align-items: center;
-  /* flex-wrap: wrap; */
   font-family: "Bebas Neue", cursive; }
   .header_logos li img {
     width: 20px; }
-
-.boton {
-  position: sticky;
-  z-index: 100;
-  top: 0;
-  left: 0; }
-  .boton button img {
-    width: 50px; }
-  .boton .card {
-    position: absolute;
-    left: 0;
-    top: 60px;
-    display: flex;
-    align-items: center;
-    border: 5px white solid; }
 
 .main_portada {
   display: flex;
