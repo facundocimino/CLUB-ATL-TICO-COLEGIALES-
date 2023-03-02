@@ -12,116 +12,6 @@
 @import './sections/socio';
 @import './resources/footer';
 
-
-@media (max-width: 795px) {
-
-    .header h3 {
-        display: none;
-    }
-
-    .header_logo {
-        width: 75px;
-
-    }
-
-    .header_lista {
-        list-style: none;
-        display: flex;
-        margin-right: 30px;
-        gap: 30px;
-        justify-content: flex-end;
-        align-items: center;
-        flex-wrap: wrap;
-        font-family: var(--fuentetitulo);
-        font-weight: lighter;
-        font-size: 20px;
-    }
-
-    .main_foto img {
-        width: 400px;
-
-    }
-
-    .main_noticias {
-        display: grid;
-        /* background-color: grey; */
-        grid-template-areas: "noticias_agenda noticias_agenda"
-            "noticia1        noticia2";
-        /* grid-template-columns: ; */
-        gap: 10px;
-        padding: 20px;
-    }
-
-    .noticias_agenda {
-        grid-area: noticias_agenda;
-        overflow: hidden;
-        width: 90%;
-    }
-
-    .noticia1 {
-        grid-area: noticia1;
-        /* width: 45vh; */
-    }
-
-    .noticia2 {
-        grid-area: noticia2;
-        /* width: 45vh; */
-    }
-
-    .footer_maps iframe {
-        width: 200px;
-        height: 125px;
-
-    }
-
-    .footer_redes :hover {
-        font-size: 13px;
-        background-color: navy;
-    }
-
-    .footer_redes li {
-        list-style: none;
-        color: white;
-        padding: 3px;
-        margin: 5px;
-        font-size: 10px;
-        font-family: var(--fuente);
-
-    }
-
-
-    .articulos {
-        padding: 15px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "articulo1 articulo1 articulo1 articulo1 articulo2 articulo2 articulo2 articulo2"
-            "articulo1 articulo1 articulo1 articulo1 articulo2 articulo2 articulo2 articulo2"
-            "articulo1 articulo1 articulo1 articulo1 articulo3 articulo3 articulo4 articulo4"
-            "articulo1 articulo1 articulo1 articulo1 articulo3 articulo3 articulo4 articulo4";
-    }
-
-    .articulo1 {
-        grid-area: articulo1;
-    }
-
-    .articulo2 {
-        grid-area: articulo2;
-    }
-
-    .articulo3 {
-        grid-area: articulo3;
-    }
-
-    .articulo4 {
-        grid-area: articulo4;
-    }
-
-}
-
 @media(max-width:420px) {
     header {
         display: flex;
@@ -158,10 +48,6 @@
         justify-content: center;
     }
 
-    /* .navbar-toggler-icon {
-        color: white;
-    } */
-
     .container-fluid {
         color: white;
         background-color: transparent;
@@ -172,7 +58,6 @@
         }
 
         #navbarNav {
-            /* display: flex; */
             color: white;
             flex-direction: column;
             width: 100%;
@@ -208,12 +93,6 @@
     .main_noticias {
         display: flex;
         flex-direction: column;
-        /* background-color: grey; */
-        // grid-template-areas: "noticias_agenda "
-        //     "noticia1"
-        //     "noticia2";
-        // grid-template-columns: 1fr;
-        // grid-row: auto;
         gap: 10px;
         padding: 20px;
         align-items: center;
@@ -236,6 +115,13 @@
             }
         }
 
+        .main_noticia3 {
+            width: 95%;
+            .noticias_foto{
+                width: 250px;
+                height: 250px;
+            }
+        }
         .noticias_agenda {
             overflow: scroll;
             font-size: 12px;
@@ -300,7 +186,6 @@
                 width: 250px;
             }
         }
-
 
     }
 
@@ -367,17 +252,9 @@
         align-items: center;
     }
 
-    /* .footer_lista{
-        margin: 1rem;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        font-size: 10px;
-    } */
     .footer_maps iframe {
         width: 150px;
         height: 120px;
-
     }
 
     .disabled {
@@ -391,37 +268,6 @@
         visibility: hidden;
     }
 }
-
-
-/* pruebas */
-
-
-
-// .carousel {
-//     width: 80vw;
-// }
-
-// .imagenes {
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     flex-direction: column;
-// }
-
-// .imagenes_amistoso {
-//     display: flex;
-//     flex-direction: row;
-//     height: 20vh;
-//     gap: 1rem;
-//     margin: 1rem;
-//     flex-wrap: wrap;
-// }
-
-// .amistoso {
-//     width: 350px;
-// }
-
 .boton_tienda {
     display: flex;
     justify-content: flex-end;
