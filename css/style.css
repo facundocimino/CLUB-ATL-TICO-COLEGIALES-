@@ -112,6 +112,7 @@ header {
 .main_noticias {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 10px;
   padding: 20px;
   width: 100%; }
@@ -398,7 +399,9 @@ header {
   .socio .socio_formulario {
     display: flex;
     flex-direction: column;
-    gap: 2rem; }
+    gap: 2rem;
+    width: 35vw;
+    margin-bottom: 2rem; }
   .socio .socio_imagen img {
     margin: 2rem;
     width: 40vw; }
@@ -536,6 +539,8 @@ footer {
     align-items: center;
     justify-content: center;
     justify-items: center; }
+    .main_noticias .posiciones {
+      width: 90vw; }
     .main_noticias .main_noticia1 {
       width: 95%; }
       .main_noticias .main_noticia1 .noticias_foto {
@@ -569,10 +574,16 @@ footer {
     gap: 2rem; }
     .noticias .noticia1 {
       width: 100%; }
+      .noticias .noticia1 h3 {
+        margin-left: 40px; }
     .noticias .noticia2 {
       width: 100%; }
+      .noticias .noticia2 h3 {
+        margin-left: 45px; }
     .noticias .noticia3 {
       width: 100%; }
+      .noticias .noticia3 h3 {
+        margin-left: 35px; }
   .imagenes {
     display: flex;
     flex-direction: column; }
@@ -615,7 +626,8 @@ footer {
     .socio .socio_formulario {
       display: flex;
       flex-direction: column;
-      gap: 2rem; }
+      gap: 2rem;
+      width: 70vw; }
       .socio .socio_formulario h4 {
         color: white; }
       .socio .socio_formulario label {

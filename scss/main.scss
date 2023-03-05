@@ -13,6 +13,8 @@
 @import './resources/footer';
 
 @media(max-width:420px) {
+
+    // COMIENZO HEADER
     header {
         display: flex;
         flex-direction: column;
@@ -47,7 +49,7 @@
         display: flex;
         justify-content: center;
     }
-
+// HEADER PARA EL MOBILE
     .container-fluid {
         color: white;
         background-color: transparent;
@@ -73,6 +75,8 @@
         }
     }
 
+
+    // COMIENZA EL MOBILE
     .main_portada {
         width: 100%;
         .main_foto {
@@ -89,7 +93,7 @@
     
     }
 
-
+// NOTICIAS DEL INDEX
     .main_noticias {
         display: flex;
         flex-direction: column;
@@ -98,6 +102,10 @@
         align-items: center;
         justify-content: center;
         justify-items: center;
+
+        .posiciones{
+            width: 90vw;
+        }
 
         .main_noticia1 {
             width: 95%;
@@ -142,6 +150,7 @@
 
     }
 
+    // SECCION NOTICIAS
     .noticias {
         display: flex;
         flex-direction: column;
@@ -150,17 +159,27 @@
 
         .noticia1 {
             width: 100%;
+            h3{
+            margin-left: 40px;
+            }
         }
 
         .noticia2 {
             width: 100%;
+            h3{
+                margin-left: 45px;
+            }
         }
 
         .noticia3 {
             width: 100%;
+            h3{
+                margin-left: 35px;
+            }
         }
     }
 
+    // SECCION GALERIA DE IMAGENES
     .imagenes {
         display: flex;
         flex-direction: column;
@@ -189,6 +208,9 @@
 
     }
 
+
+
+    // SECCION TIENDA COLE
     .articulos {
         display: flex;
         flex-direction: column;
@@ -212,6 +234,7 @@
         }
     }
 
+    // SECCION HACETE SOCIO
     .socio {
         display: flex;
         flex-direction: row;
@@ -229,6 +252,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            width: 70vw;
 
             h4 {
                 color: white;
@@ -247,6 +271,8 @@
         }
     }
 
+
+    // FOOTER
     footer {
         display: flex;
         align-items: center;

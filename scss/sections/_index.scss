@@ -55,6 +55,7 @@
 .main_noticias {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 10px;
     padding: 20px;
     width: 100%;
